@@ -3,7 +3,7 @@
     programs.git = {
       enable = true;
       userName = "Ferret";
-      userEmail = "ferret@mustelid.alice";
+      userEmail = "73801176+ferretirl@users.noreply.github.com";
     };
   };
 }
