@@ -1,0 +1,16 @@
+id = 1509306472390070302 
+hosts = ["/run/user/1000/mpd/socket"]
+
+[format]
+details = "$title"
+state = "$artist / $album"
+timestamp = "both"
+large_image = "notes"
+small_image = "notes"
+large_text = ""
+small_text = ""
+display_type = "state"
+button1_text = ""
+button1_link = ""
+button2_text = ""
+button2_link = ""
