@@ -13,5 +13,6 @@
           
             '';
         };
+        systemd.user.services.mpd.Service.RuntimeDirectory = "mpd";
     };
 }
