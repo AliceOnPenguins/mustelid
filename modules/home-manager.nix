@@ -7,7 +7,7 @@
       extraSpecialArgs = { inherit inputs self; };
       users.ferret = {
         home.username = "ferret";
-        home.homeDirectory = "/home/ferret";
+        home.homeDirectory = lib.mkForce "/home/ferret";
         home.stateVersion = "26.11";
         imports = builtins.attrValues self.homeModules;
         home.packages = with pkgs; [

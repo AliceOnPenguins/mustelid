@@ -2,6 +2,8 @@
     flake.nixosModules.mustelidConfiguration = { pkgs, lib, ... }: {
         imports = [
         self.nixosModules.mustelidHardware
+        self.nixosModules.usersFerret
+        self.nixosModules.bootloader
         ];
 
          nix.settings = {
