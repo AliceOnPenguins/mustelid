@@ -23,17 +23,8 @@
          ];
        };
        
-         networking.hostName = "mustelid";
-
-         users.defaultUserShell = pkgs.fish;
-       
          boot.loader.systemd-boot.enable = true;
          boot.loader.efi.canTouchEfiVariables = true;
-       
-         networking.networkmanager.enable = true;
-       
-         time.timeZone = "Europe/Prague";
-         i18n.defaultLocale = "en_US.UTF-8";
        
          console = {
             font = "${pkgs.terminus_font}/share/consolefonts/ter-132b.psf.gz";
