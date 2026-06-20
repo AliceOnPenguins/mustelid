@@ -23,53 +23,6 @@
          ];
        };
        
-         boot.loader.systemd-boot.enable = true;
-         boot.loader.efi.canTouchEfiVariables = true;
-       
-         console = {
-            font = "${pkgs.terminus_font}/share/consolefonts/ter-132b.psf.gz";
-            keyMap = "us";
-         };
-       
-         fonts.packages = [
-           pkgs.nerd-fonts.jetbrains-mono
-         ];
-       
-         programs.fish.enable = true;
-         programs.steam.enable = true;
-       
-         programs.hyprland = {
-            enable = true;
-            withUWSM = true;
-            xwayland.enable = true;
-            };
-       
-         environment.systemPackages = with pkgs; [
-           git
-           wget
-           gcc
-           inputs.helium.packages.${system}.default
-           tree-sitter
-           psmisc
-           terminus_font
-         ];
-       
-       
-          users.users.ferret = {
-            isNormalUser = true;
-            extraGroups = [ "wheel" "video" "audio" "input" "networkmanager" ];
-            home = "/home/ferret";
-            packages = with pkgs; [
-              tree
-            ];
-          };
-       
-         # Enable sound.
-         services.pipewire = {
-           enable = true;
-           pulse.enable = true;
-         };
-       
          nixpkgs.config = {
            permittedInsecurePackages = [
               "electron-39.8.10"

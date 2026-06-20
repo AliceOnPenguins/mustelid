@@ -16,6 +16,7 @@
             eza
             hyfetch
             yazi
+            tree
             protonplus
             prismlauncher
             hyprshot
