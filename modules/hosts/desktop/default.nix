@@ -18,6 +18,7 @@
         self.nixosModules.mustelidConfiguration
         self.nixosModules.home-manager
         self.nixosModules.gnome-keyring
+        self.nixosModules.defaultShell
         self.nixosModules.cups-printing
         self.nixosModules.pipewire
         self.nixosModules.networking
