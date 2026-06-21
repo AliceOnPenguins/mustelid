@@ -14,6 +14,7 @@
           git
           wget
           gcc
+          wl-clipboard
           tree-sitter
           psmisc
           terminus_font
