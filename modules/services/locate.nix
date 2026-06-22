@@ -4,6 +4,7 @@
             enable = true;
             interval = "hourly";
             output = "/var/cache/locatedb";
+            package = pkgs.mlocate;
           };
       };
   }
