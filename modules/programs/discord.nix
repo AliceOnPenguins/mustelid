@@ -312,6 +312,9 @@
                     NoMiddleClickPaste = {
                         enabled = true;
                       };
+                    UnlockedAvatarZoom = {
+                        enabled = true;
+                      };
 
                   };
                 uiElements = {
