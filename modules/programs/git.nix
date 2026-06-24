@@ -3,8 +3,8 @@
       programs.git = {
         enable = true;
         settings = {
-          user.name = "Ferret";
-          user.email = "73801176+ferretirl@users.noreply.github.com";
+          user.name = "Alice";
+          user.email = "73801176+AliceOnPenguins@users.noreply.github.com";
           credential.helper = "store";
         };
     };
