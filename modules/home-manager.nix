@@ -12,6 +12,7 @@
         imports = builtins.attrValues self.homeModules;
         home.packages = with pkgs; [
             neovim
+            rembg
             oculante
             lxqt.pavucontrol-qt
             obs-studio
