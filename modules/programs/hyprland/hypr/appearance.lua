@@ -10,7 +10,7 @@
 hl.config({
 	general = {
 		gaps_in = 10,
-		gaps_out = 65,
+		gaps_out = 50,
 		col = {
 			active_border = {
 				colors = {
@@ -24,13 +24,13 @@ hl.config({
 			},
 			inactive_border = "rgba(1a1a1aaa)",
 		},
-		border_size = 3,
+		border_size = 2,
 		allow_tearing = false,
 		layout = "master",
 	},
 
 	decoration = {
-		rounding = 5,
+		rounding = 20,
 		rounding_power = 3,
 		active_opacity = 1.0,
 		inactive_opacity = 1.0,
