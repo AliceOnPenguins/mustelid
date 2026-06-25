@@ -1,21 +1,20 @@
 { self, inputs, ... }: {
     flake.homeModules.fastfetch = { pkgs, lib, ... }: {
-
        programs.fastfetch = {
            enable = true;
            settings = {
              "$schema" = "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json";
              logo = {
                type = "auto";
-               # source = "~/hearts/modules/programs/fastfetch/assets/nixaa.png";
-               width = 49;
-               height = 20;
+               source = "~/hearts/modules/programs/fastfetch/assets/och.jpg";
+               height = 25;
+               width = 40;
                # color = {
                #   "1" = "blue";
                # };
                padding = {
-                 top = 2;
-                 left = 4;
+                 top = 0;
+                 left = 2;
                };
              };
              display = {
@@ -24,9 +23,10 @@
              modules = [
                "break"
                "break"
+               "break"
                {
                type = "title";
-               format = "┏━━━━━━━━━━━━━━{user-name}@{host-name}━━━━━━━━━━━━━━┓";
+               format = "┏━━━━━━━━━━━━━━━{user-name}@{host-name}━━━━━━━━━━━━━━━┓";
                }
                "break"
                {
