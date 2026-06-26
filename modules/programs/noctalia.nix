@@ -8,7 +8,7 @@
                 theme = {
                     mode = "dark";
                     source = "builtin";
-                    builtin = "Gruvbox";
+                    builtin = "Kanagawa";
                     templates = {
                         builtin_ids = [ "btop" "cava" "foot" "gtk3" "gtk4" "kitty" "qt" ];
                         community_ids = [ "yazi" "discord" ];
@@ -17,7 +17,7 @@
 
                 wallpaper = {
                     enabled = true;
-                    default.path = "\~/hearts/wallpapers/__arlenbell_and_eillon_rinto_original_drawn_by_tuweibu__45fd21257b571c18e1dafafacbd41c4a.jpg";
+                    default.path = "\~/hearts/wallpapers/musashiwhale-by-utagawa-kuniyoshi.jpg";
                     directory = "\~/Pictures/";
                   };
 
@@ -76,11 +76,11 @@
                     show_location = false;
                     ui_scale = 1.5;
                     panel = {
-                        launcher_categories = false;
-                        launcher_placement = "centered";
-                        launcher_compact = false;
-                        launcher_sort_by_usage = false;
-                        launcher_show_icons = true;
+                        categories = false;
+                        placement = "centered";
+                        compact = false;
+                        sort_by_usage = false;
+                        show_icons = true;
                       };
                   };
 
