@@ -14,24 +14,24 @@ hl.config({
 		col = {
 			active_border = {
 				colors = {
-					-- "rgba(d65d0eff)",
-					-- "rgba(d79921ff)",
-					-- "rgba(f9f5d7ff)",
-					-- "rgba(5b9cd0ff)",
-					"rgba(f4d78cff)",
+					"rgba(d65d0eff)",
+					"rgba(d79921ff)",
+					"rgba(f9f5d7ff)",
+					"rgba(5b9cd0ff)",
+					"rgba(2e485bff)",
 				},
 				angle = 90,
 			},
 			inactive_border = "rgba(1a1a1aaa)",
 		},
-		border_size = 2,
+		border_size = 4,
 		allow_tearing = false,
 		layout = "master",
 	},
 
 	decoration = {
-		rounding = 20,
-		rounding_power = 3,
+		rounding = 10,
+		rounding_power = 2,
 		active_opacity = 1.0,
 		inactive_opacity = 1.0,
 

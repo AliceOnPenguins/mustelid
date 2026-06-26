@@ -8,6 +8,9 @@
 
 hl.config({
 
+  scrolling = {
+    column_width = 0.5,
+  },
 	dwindle = {
 		preserve_split = true,
 	},

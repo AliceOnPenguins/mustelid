@@ -13,21 +13,69 @@ hl.config({
 	},
 })
 
-hl.animation({ leaf = "fadeSwitch", enabled = false })
-hl.animation({ leaf = "fadeDim", enabled = false })
-
-hl.curve("mangoOpen", { type = "bezier", points = { { 0.46, 1.0 }, { 0.29, 1 } } })
-hl.curve("mangoClose", { type = "bezier", points = { { 0.08, 0.92 }, { 0.0, 1 } } })
-hl.curve("mangoSpring", { type = "spring", mass = 0.6, stiffness = 25, dampening = 9 })
-
-hl.animation({ leaf = "windowsIn", enabled = true, speed = 5.5, spring = "mangoSpring", style = "slide left" })
-hl.animation({ leaf = "windowsOut", enabled = true, speed = 18.0, bezier = "mangoClose", style = "popin" })
-hl.animation({ leaf = "windowsMove", enabled = true, speed = 5.5, spring = "mangoSpring" })
-hl.animation({ leaf = "fadeIn", enabled = false, speed = 5.5, bezier = "mangoOpen" })
-hl.animation({ leaf = "fadeOut", enabled = false, speed = 8.0, bezier = "mangoClose" })
-hl.animation({ leaf = "fadeSwitch", enabled = false })
-hl.animation({ leaf = "fadeDim", enabled = false })
-hl.animation({ leaf = "fadeLayers", enabled = true, speed = 5.5, bezier = "mangoOpen" })
-hl.animation({ leaf = "layers", enabled = false })
-hl.animation({ leaf = "workspaces", enabled = true, speed = 4.5, bezier = "mangoOpen", style = "slide" })
-hl.animation({ leaf = "specialWorkspace", enabled = true, speed = 4.5, bezier = "mangoOpen", style = "slidevert" })
+hl.curve( "water", { 
+  type = "bezier", points = { 
+    {0.22, 0.9},
+    {0.36, 1.0} 
+  } 
+})
+hl.curve( "flow", { 
+  type = "bezier", points = { 
+    {0.25, 0.1},
+    {0.25, 1.0} 
+  } 
+})
+hl.curve( "ripple", { 
+  type = "bezier", points = { 
+    {0.33, 0.0},
+    {0.2, 1.0} 
+  } 
+})
+hl.curve( "stream", { 
+  type = "bezier", points = { 
+    {0.4, 0.0},
+    {0.4, 1.0} 
+  } 
+})
+hl.curve( "cascade", { 
+  type = "bezier", points = { 
+    {0.19, 1.0},
+    {0.22, 1.0} 
+  } 
+})
+hl.curve( "md3_standard", { 
+  type = "bezier", points = { 
+    {0.2, 0.0},
+    {0.0, 1.0} 
+  } 
+})
+hl.curve( "md3_accel", { 
+  type = "bezier", points = { 
+    {0.3, 0.0},
+    {0.8, 0.15} 
+  } 
+})
+hl.curve( "overshot", { 
+  type = "bezier", points = { 
+    {0.05, 0.9},
+    {0.1, 1.05} 
+  } 
+})
+ 
+hl.animation({ leaf = "windows", enabled = true, speed = 4.0, bezier = "water" })
+hl.animation({ leaf = "windowsIn", enabled = true, speed = 3.5, bezier = "cascade", style = "popin" })
+hl.animation({ leaf = "windowsOut", enabled = true, speed = 3.4, bezier = "stream", style = "popin" })
+hl.animation({ leaf = "windowsMove", enabled = true, speed = 1.9, bezier = "flow" })
+hl.animation({ leaf = "fade", enabled = true, speed = 3.4, bezier = "water" })
+hl.animation({ leaf = "fadeIn", enabled = true, speed = 2.0, bezier = "cascade" })
+hl.animation({ leaf = "fadeOut", enabled = true, speed = 1.8, bezier = "ripple" })
+hl.animation({ leaf = "fadeDim", enabled = true, speed = 2.0, bezier = "water" })
+hl.animation({ leaf = "fadeSwitch", enabled = true, speed = 2.4, bezier = "flow" })
+hl.animation({ leaf = "layersIn", enabled = true, speed = 2.5, bezier = "overshot", style = "popin 80%" })
+hl.animation({ leaf = "layersOut", enabled = true, speed = 2.3, bezier = "md3_accel", style = "popin 90%" })
+hl.animation({ leaf = "layers", enabled = true, speed = 2.5, bezier = "md3_standard" })
+hl.animation({ leaf = "workspaces", enabled = true, speed = 2.5, bezier = "flow" })
+hl.animation({ leaf = "specialWorkspace", enabled = true, speed = 3.5, bezier = "water" })
+hl.animation({ leaf = "border", enabled = false, speed = 3.9, bezier = "water" })
+hl.animation({ leaf = "borderangle", enabled = false, speed = 4.5, bezier = "flow" })
+ 
