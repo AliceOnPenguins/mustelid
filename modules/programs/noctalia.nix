@@ -7,7 +7,8 @@
 
                 theme = {
                     mode = "dark";
-                    source = "builtin";
+                    source = "community";
+                    community_palette = "Vesper";
                     builtin = "Kanagawa";
                     templates = {
                         builtin_ids = [ "btop" "cava" "foot" "gtk3" "gtk4" "kitty" "qt" ];
