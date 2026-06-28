@@ -18,7 +18,7 @@
 
                 wallpaper = {
                     enabled = true;
-                    default.path = "\~/hearts/wallpapers/musashiwhale-by-utagawa-kuniyoshi.jpg";
+                    default.path = "\~/hearts/wallpapers/wallhaven-k82d26.jpg";
                     directory = "\~/Pictures/";
                   };
 
@@ -96,9 +96,9 @@
                 widget = {
                     workspaces = {
                         focused_color = "secondary";
-                        empty_color = "outline";
+                        empty_color = "on_surface_variant";
                         minimal = true;
-                        occupied_color = "outline";
+                        occupied_color = "on_surface_variant";
                       };
                   };
               };
