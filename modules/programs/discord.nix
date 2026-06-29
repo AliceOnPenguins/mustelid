@@ -1,5 +1,5 @@
 { self, inputs, ... }: {
-    flake.homeModules.discord = { pkgs, lib, ... }: {
+    flake.homeModules.discord = { pkgs, lib, config, ... }: {
         programs.equibop = {
             enable = true;
             settings = {
@@ -346,14 +346,14 @@
               };
               extraQuickCss = ''
                   *, *::before, *::after {
-                      font-family:'JetbrainsMono NFM', mono !important;
+                      font-family:'${config.theme.font.nerdFont}', mono !important;
                     }
                     
                     :root {
-                        --font-primary: 'JetBrainsMono NFM', mono;
-                        --font-display: 'JetBrainsMono NFM', mono;
-                        --font-code: 'JetBrainsMono NFM', mono;
-                        --font-headline: 'JetBrainsMono NFM', mono;
+                        --font-primary: '${config.theme.font.nerdFont}', mono;
+                        --font-display: '${config.theme.font.nerdFont}', mono;
+                        --font-code: '${config.theme.font.nerdFont}', mono;
+                        --font-headline: '${config.theme.font.nerdFont}', mono;
                       }
                 '';
             };

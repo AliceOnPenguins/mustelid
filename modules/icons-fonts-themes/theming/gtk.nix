@@ -1,5 +1,5 @@
 { self, inputs, ... }: {
-  flake.homeModules.gtk = { pkgs, lib, ... }: {
+  flake.homeModules.gtk = { pkgs, lib, config, ... }: {
     gtk = {
       enable = true;
       theme = {
@@ -11,7 +11,7 @@
         package = pkgs.papirus-icon-theme;
       };
       font = {
-        name = "JetBrainsMono Nerd Font";
+        name = config.theme.font.nerdFont;
         size = 14;
       };
       cursorTheme = {

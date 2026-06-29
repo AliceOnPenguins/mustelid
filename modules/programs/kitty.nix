@@ -1,9 +1,9 @@
 { self, inputs, ... }: {
-    flake.homeModules.kitty = { pkgs, lib, ... }: {
+    flake.homeModules.kitty = { pkgs, lib, config, ... }: {
       programs.kitty = {
         enable = true;
         settings = {
-        font_family = "JetBrainsMono NF";
+        font_family = config.theme.font.nerdFont;
         font_size = 14;
         cursor_shape = "block";
         scrollback_lines = 1600;

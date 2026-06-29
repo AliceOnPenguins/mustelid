@@ -1,5 +1,5 @@
 { self, inputs, ... }: {
-    flake.homeModules.qt6ct = { pkgs, lib, ... }: {
+    flake.homeModules.qt6ct = { pkgs, lib, config, ... }: {
         qt = {
             enable = true;
             qt6ctSettings = {
@@ -10,8 +10,8 @@
                     style = "Fusion";
                   };
                 Fonts = {
-                    fixed = "\"JetBrainsMono Nerd Font,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,Regular,0,0\"";
-                    general = "\"JetBrainsMono Nerd Font,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,Regular,0,0\"";
+                    fixed = "\"${config.theme.font.nerdFont},14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,Regular,0,0\"";
+                    general = "\"${config.theme.font.nerdFont},14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,Regular,0,0\"";
                   };
                 Interface = {
                     activate_item_on_single_click = 1;

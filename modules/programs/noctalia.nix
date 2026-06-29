@@ -1,5 +1,5 @@
 { self, inputs, ... }:{
-    flake.homeModules.noctaliav5 = { pkgs, lib, ... }: {
+    flake.homeModules.noctaliav5 = { pkgs, lib, config, ... }: {
       imports = [ inputs.noctalia.homeModules.default ];
         programs.noctalia = {
             enable = true;
@@ -30,7 +30,7 @@
                         capsule_fill = "on_hover";
                         center = [];
                         end = [ "clock" "tray" "notifications" "media" ];
-                        font_family = "JetBrainsMono NF";
+                        font_family = config.theme.font.nerdFont;
                         margin_edge = 0;
                         margin_ends = 0;
                         padding = 15;
@@ -70,7 +70,7 @@
                     clipboard_history_max_entries = 100;
                     corner_radius_scale = 0.55;
                     date_format = "{:%A}, {:/%d/%m/%Y}";
-                    font_family = "JetBrainsMono NF";
+                    font_family = config.theme.font.nerdFont;
                     lang = "en";
                     polkit_agent = true;
                     settings_show_advanced = true;
