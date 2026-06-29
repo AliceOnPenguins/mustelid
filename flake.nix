@@ -10,18 +10,18 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
     aagl = {
       url = "github:ezKEa/aagl-gtk-on-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-  zen-browser = {
-    url = "github:0xc000022070/zen-browser-flake";
-    inputs = {
-      nixpkgs.follows = "nixpkgs";
-      home-manager.follows = "home-manager";
-    };
-  };
+    # hyprland-scroll-overview = {
+    #   url = "github:yayuuu/hyprland-scroll-overview";
+    #   inputs.hyprland.follows = "hyprland";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
+
     noctalia = {
     	url = "github:noctalia-dev/noctalia";
 	  };
