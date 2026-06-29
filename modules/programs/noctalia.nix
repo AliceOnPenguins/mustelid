@@ -18,7 +18,7 @@
 
                 wallpaper = {
                     enabled = true;
-                    default.path = "\~/hearts/wallpapers/wallhaven-k82d26.jpg";
+                    default.path = "\~/hearts/wallpapers/redh.jpg";
                     directory = "\~/Pictures/";
                   };
 
