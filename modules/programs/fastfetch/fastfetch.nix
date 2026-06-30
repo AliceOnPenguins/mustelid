@@ -6,14 +6,14 @@
              "$schema" = "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json";
              logo = {
                type = "auto";
-               source = "~/hearts/modules/programs/fastfetch/assets/rhff3.webp";
-               height = 25;
-               width = 40;
+               source = "~/hearts/modules/programs/fastfetch/assets/yunah1.jpg";
+               height = 20;
+               width = 35;
                # color = {
                #   "1" = "blue";
                # };
                padding = {
-                 top = 0;
+                 top = 2;
                  left = 2;
                };
              };
@@ -21,7 +21,6 @@
                separator = "  ";
              };
              modules = [
-               "break"
                "break"
                "break"
                {
