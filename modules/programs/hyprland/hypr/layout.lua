@@ -7,20 +7,9 @@
 -------------------------------------------------------
 
 hl.config({
-
   scrolling = {
-    column_width = 0.33333,
+    column_width = 0.5,
     explicit_column_widths = "0.33333, 0.5, 0.66667, 1.0",
     follow_min_visible = 1.0,
-    
   },
-	dwindle = {
-		preserve_split = true,
-	},
-
-	master = {
-		new_status = "master",
-		mfact = 0.55,
-		new_on_top = true,
-	},
 })
