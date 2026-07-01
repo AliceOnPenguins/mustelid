@@ -41,10 +41,10 @@ body {
   --text-5: color-mix(in srgb, #f0dce5 35%, #8a6b78);
 
   /* Backgrounds */
-  --bg-1: #252428;
-  --bg-2: #252428;
-  --bg-3: #252428;
-  --bg-4: #1a1a1c;
+  --bg-1: color-mix(in srgb, #252428 65%, transparent);
+  --bg-2: color-mix(in srgb, #252428 65%, transparent);
+  --bg-3: color-mix(in srgb, #252428 65%, transparent);
+  --bg-4: color-mix(in srgb, #1a1a1c 65%, transparent);
 
   --hover: #252428;
   --active: #252428;
