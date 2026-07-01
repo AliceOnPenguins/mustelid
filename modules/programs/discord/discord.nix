@@ -31,7 +31,7 @@
                 themeLinks = [];
                 eagerPatches = false;
                 enabledThemes = [
-                  "noctalia.theme.css"
+                  "yunah24.css"
                 ];
                 enabledThemeLinks = [];
                 enableOnlineThemes = true;
